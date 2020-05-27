@@ -5,6 +5,8 @@ model small
 segment over ;сегмент оверлея
 over ends
 
+
+
 .data
 capacity     db 201
 bufferLength     db ?
@@ -396,7 +398,7 @@ convertDigitsToNumber proc near
     endFirstConvert:
     ;call errorMessage
     ;-----------------------------
-    lea bx, digitsToNumberBuffer; копирует адрес буффер
+    lea bx, digitsToNumberBuffer;
     pop dx
     jmp checkIsEmpty
     ;---------------------------------
